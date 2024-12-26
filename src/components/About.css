@@ -1,0 +1,17 @@
+.fruit-card {
+  width: 18rem;
+}
+
+@media (max-width: 999px) {
+  .fruit-card {
+    width: 14rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .fruit-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

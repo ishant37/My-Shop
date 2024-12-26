@@ -1,0 +1,26 @@
+.product-scroll-section {
+  padding: 20px;
+  background-color: #fff;
+  max-height: 600px;
+  /* Adjust the height as per your requirement */
+  overflow-y: auto;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card {
+  margin-bottom: 15px;
+}
+
+.discount-badge {
+  background-color: #28a745;
+  color: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
