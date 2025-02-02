@@ -7,7 +7,7 @@ export default function About({ width }) {
       <div className="text-center my-4">
         <h1>About</h1>
       </div>
-      <div className="fruits d-flex flex-wrap justify-content-center">
+      <div className="fruits d-flex container flex-wrap justify-content-center">
         <div className="card my-4 mx-4" style={{ width: '18rem' }}>
           <img
             src="https://images.pexels.com/photos/54370/pexels-photo-54370.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -71,30 +71,6 @@ export default function About({ width }) {
         <div className="card my-4 mx-4" style={{ width: '18rem' }}>
           <img
             src="https://images.pexels.com/photos/247592/pexels-photo-247592.jpeg?auto=compress&cs=tinysrgb&w=600"
-            className="card-img-top"
-            alt="Watermelon"
-          />
-          <div className="card-body">
-            <p className="card-text">
-              A refreshing, hydrating fruit with a high water content, perfect for hot summer days. It has a sweet, juicy flesh that is usually red or pink and is rich in vitamins A and C.
-            </p>
-          </div>
-        </div>
-        <div className="card my-4 mx-4" style={{ width: '18rem' }}>
-          <img
-            src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=600"
-            className="card-img-top"
-            alt="Watermelon"
-          />
-          <div className="card-body">
-            <p className="card-text">
-              A refreshing, hydrating fruit with a high water content, perfect for hot summer days. It has a sweet, juicy flesh that is usually red or pink and is rich in vitamins A and C.
-            </p>
-          </div>
-        </div>
-        <div className="card my-4 mx-4" style={{ width: '18rem' }}>
-          <img
-            src="https://images.pexels.com/photos/1367243/pexels-photo-1367243.jpeg?auto=compress&cs=tinysrgb&w=600"
             className="card-img-top"
             alt="Watermelon"
           />

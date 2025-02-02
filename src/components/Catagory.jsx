@@ -66,28 +66,38 @@ const categories = [
     image: 'https://otipy.com/_next/image?url=https%3A%2F%2Fimg.crofarm.com%2Fimages%2Fcategory%2Ffa7b29e5179a.png&w=384&q=75',
   },
 ];
-export default function Catagory() {
+export default function Category() {
   return (
-    <div className="container">
-      <h2 className="">Categories</h2>
-      <div className="row my-4">
+    <div className="container py-5">
+      <h2 className="text-center text-primary mb-5" style={{ fontWeight: 600, fontSize: '2rem' }}>
+        Explore Categories
+      </h2>
+      <div className="row g-3">
         {categories.map((category) => (
-          <div className="col-md-4 mb-4 custom-size" key={category.name}>
-            <div className="my-3">
+          <div className="col-sm-6 col-md-4" key={category.name}>
+            <div className="card border-0 rounded-3 shadow-sm position-relative overflow-hidden">
               <img
                 src={category.image}
-                className="card-img-top"
+                className="card-img-top w-100 h-100 object-fit-cover"
                 alt={category.name}
+                style={{
+                  transition: 'transform 0.4s ease, filter 0.3s ease',
+                  height: '180px',
+                }}
               />
-              <div className="text-black fs-6 fw-light">
-                <h5 className=" ">{category.name}</h5>
+              <div className="card-body p-3 text-center">
+                <h5 className="card-title text-dark fw-bold">{category.name}</h5>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="">
-        <img src="https://img.crofarm.com/otipyecom/home/web-download-banner.png" alt="" className='img ' />
+      <div className="mt-5 text-center">
+        <img
+          src="https://img.crofarm.com/otipyecom/home/web-download-banner.png"
+          alt="Promo Banner"
+          className="img-fluid rounded-3 shadow-lg"
+        />
       </div>
     </div>
   );

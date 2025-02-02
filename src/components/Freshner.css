@@ -1,7 +1,7 @@
 .fresheners-container {
   padding: 20px;
   overflow-x: hidden;
-  overflow-wrap: anywhere;
+  word-wrap: break-word; /* 'overflow-wrap: anywhere;' changed to a more standard alternative */
 }
 
 .products-row {
@@ -10,25 +10,52 @@
   overflow-x: auto;
   gap: 20px;
   padding-bottom: 10px;
+  scroll-snap-type: x mandatory; /* Smooth horizontal scrolling */
+  scrollbar-width: thin; /* Improve scrollbar appearance */
 }
 
 .product-card {
   flex: 0 0 auto;
-  width: 200px;
-  /* Adjust card width as needed */
+  width: 220px; /* Slightly increased width for better spacing */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .card-img-top {
-  height: 150px;
-  /* Adjust image height as needed */
+  height: 160px; /* Slightly increased for better visibility */
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .discount-badge {
   background-color: #ff0000;
   color: white;
-  padding: 5px;
+  padding: 6px 10px;
   font-size: 0.8em;
-  border-radius: 5px;
+  font-weight: bold;
+  border-radius: 6px;
   margin-top: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .products-row {
+    gap: 10px; /* Reduce spacing for smaller screens */
+  }
+
+  .product-card {
+    width: 180px; /* Adjust card size for mobile */
+  }
+
+  .card-img-top {
+    height: 140px;
+  }
 }

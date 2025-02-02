@@ -1,0 +1,82 @@
+.about-us-container {
+  padding: 30px;
+  background-color: #f8f9fa;
+}
+
+.about-us-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-us-mission-title, .about-us-values-title, .about-us-contact-title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.about-us-mission-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-us-values {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-us-values li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.about-us-contact-description {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .about-us-title {
+    font-size: 1.5rem;
+  }
+
+  .about-us-description, 
+  .about-us-mission-description, 
+  .about-us-contact-description {
+    font-size: 0.9rem;
+  }
+
+  .about-us-mission-title, 
+  .about-us-values-title, 
+  .about-us-contact-title {
+    font-size: 1.25rem;
+  }
+
+  .about-us-values li {
+    font-size: 0.9rem;
+  }
+
+  /* Resize images */
+  .about-us-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hide content on small screens */
+  .about-us-description,
+  .about-us-mission-title,
+  .about-us-mission-description,
+  .about-us-values,
+  .about-us-contact-title,
+  .about-us-contact-description {
+    display: none;
+  }
+}
