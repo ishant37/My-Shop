@@ -130,7 +130,7 @@ const Kitechenitems=[
         ))}
       </div>
     {/* <div className="container fresheners-container"> */}
-      <h3 className="mb-3">Fresh Vegetables</h3>
+      <h3 className="mb-3">Kithcen Products</h3>
       <div className="products-row">
         {Dailyitems.map((product) => (
           <div key={product.id} className="card product-card">
@@ -147,7 +147,7 @@ const Kitechenitems=[
         ))}
       </div>
     {/* <div className="container fresheners-container"> */}
-      <h3 className="mb-3">Fresh Vegetables</h3>
+      <h3 className="mb-3">Daily Products</h3>
       <div className="products-row">
         {Kitechenitems.map((product) => (
           <div key={product.id} className="card product-card">
