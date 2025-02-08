@@ -5,8 +5,6 @@ import Cart from './components/Cart';
 import Background from './components/Background';
 import About from './components/About';
 import Container from './components/Container';
-// import Fruits from './components/Fruits';
-// import Catagory from './components/Catagory';
 import Fresheners from './components/Freshners';
 import Cold from './components/Cold_drinks';
 import Features from './components/Features';
